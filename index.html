@@ -1,91 +1,98 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>BEM Foundation Canada</title>
   <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <header class="site-header">
-    <div class="container header-inner">
-      <img src="bem-logo.png" alt="BEM Foundation Canada logo" class="logo" />
-      <nav class="nav">
-        <a href="#about">About</a>
-        <a href="#programs">Programs</a>
-        <a href="#donate" class="cta">Donate</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </div>
+    <img src="bem-logo.png" alt="BEM Foundation Canada Logo" class="logo" />
+    <h1 class="tagline">Empowering Youth, Supporting Families, Guiding Newcomers</h1>
+    <nav class="nav">
+      <a href="#about">About</a>
+      <a href="#programs">Programs</a>
+      <a href="#settlement">Settlement</a>
+      <a href="#donate">Donate</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
   <main>
-    <section class="hero">
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <h1>Empowering Youth and Families</h1>
-          <p>We support and uplift young people and their families through mentorship, community outreach, and family services. Together we create pathways to success and healing.</p>
-          <a href="#programs" class="btn primary">Learn More</a>
-        </div>
-        <div class="hero-image">
-          <img src="bem-logo.png" alt="BEM Foundation flamingo logo" />
-        </div>
+    <section id="about" class="section">
+      <h2>About Us</h2>
+      <p>
+        BEM Foundation Canada is dedicated to empowering youth, supporting families, and
+        helping newcomers build strong, successful futures in Canada. We believe that
+        every challenge is an opportunity for growth, and every life has potential.
+      </p>
+    </section>
+
+    <section id="programs" class="section">
+      <h2>Our Programs</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Youth Mentorship</h3>
+          <p>Guidance and support to help youth achieve their goals and navigate challenges.</p>
+        </article>
+        <article class="card">
+          <h3>Family Support</h3>
+          <p>Resources and programs designed to strengthen families and promote well-being.</p>
+        </article>
+        <article class="card">
+          <h3>RESET Initiative</h3>
+          <p>Helping youth with justice involvement understand that setbacks don’t define their future.</p>
+        </article>
       </div>
     </section>
 
-    <section id="programs" class="programs">
-      <div class="container">
-        <h2>Our Programs</h2>
-        <p class="lede">Programs designed to meet the needs of youth and families.</p>
-        <div class="cards">
-          <article class="card">
-            <h3>Youth Mentorship</h3>
-            <p>One-on-one guidance, goal-setting and life skills for youth.</p>
-          </article>
-          <article class="card">
-            <h3>Family Services</h3>
-            <p>Resources and coaching to strengthen family bonds and stability.</p>
-          </article>
-          <article class="card">
-            <h3>Community Outreach</h3>
-            <p>Engaging the community for positive change and prevention.</p>
-          </article>
-        </div>
+    <section id="settlement" class="section light">
+      <h2>Settlement Support for Newcomers</h2>
+      <p>
+        We understand the challenges of starting a new life in Canada. From navigating the
+        education system to accessing healthcare and employment resources, we walk alongside
+        families as they settle into their new community.
+      </p>
+      <div class="cards">
+        <article class="card">
+          <h3>Orientation &amp; Guidance</h3>
+          <p>Helping newcomers understand Canadian systems, rights, and responsibilities.</p>
+        </article>
+        <article class="card">
+          <h3>Community Connections</h3>
+          <p>Linking families to cultural groups, community centers, and peer support.</p>
+        </article>
+        <article class="card">
+          <h3>Practical Assistance</h3>
+          <p>Resources for housing, schooling, and language support.</p>
+        </article>
       </div>
     </section>
 
-    <section id="donate" class="donate">
-      <div class="container donate-inner">
-        <div>
-          <h2>Make a Donation</h2>
-          <p>Your support helps us continue our work and make a difference in the lives of youth and families.</p>
-        </div>
-        <div>
-          <a class="btn donate-btn" href="#contact">Donate</a>
-        </div>
-      </div>
+    <section id="donate" class="section donate">
+      <h2>Support Our Mission</h2>
+      <p>
+        Every contribution helps us empower youth, support families, and guide newcomers
+        as they build their future in Canada. Your generosity fuels programs that provide
+        mentorship, settlement services, and second chances for those who need it most.
+      </p>
+      <button class="donate-btn" disabled title="Coming soon">Donate (Coming Soon)</button>
+      <p class="donate-note">
+        Online donations will be available shortly. Thank you for your patience and support.
+      </p>
     </section>
 
-    <section id="about" class="about">
-      <div class="container">
-        <h2>About BEM Foundation Canada</h2>
-        <p>BEM Foundation Canada is a registered non-profit committed to supporting resettled families and youth through mentorship, education, and restorative programs. Founded to bridge gaps and create opportunities, we focus on practical outcomes and long-term wellbeing.</p>
-      </div>
-    </section>
-
-    <section id="contact" class="contact">
-      <div class="container">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:info@bemfoundation.ca">info@bemfoundation.ca</a></p>
-        <p>Phone: (555) 555-5555</p>
-      </div>
+    <section id="contact" class="section">
+      <h2>Contact Us</h2>
+      <p>Email: <a href="mailto:info@bemfoundationcanada.ca">info@bemfoundationcanada.ca</a></p>
+      <p>Phone: <a href="tel:+14372233264">437-223-3264</a></p>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container">
-      <p>© BEM Foundation Canada · Registered Charity</p>
-    </div>
+    <p>&copy; 2025 BEM Foundation Canada. All rights reserved.</p>
   </footer>
 </body>
 </html>
