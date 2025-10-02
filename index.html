@@ -3,10 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BEM Foundation Canada - Programs</title>
+  <title>BEM Foundation Canada</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <header class="site-header">
+    <div class="header-left">
+      <img src="images/logo.jpeg" alt="BEM Foundation Canada Logo" class="logo">
+    </div>
+    <nav class="header-right">
+      <a href="#mission">Mission & Vision</a>
+      <a href="#programs">Programs</a>
+      <a href="#about">About Us</a>
+      <a href="#contact">Contact Us</a>
+      <a href="#donate" class="donate-btn">Donate</a>
+    </nav>
+  </header>
+
+  <section id="mission" class="mission-section">
+    <h2>Our Mission & Vision</h2>
+    <p>Empowering youth, supporting families, and guiding newcomers toward thriving futures.</p>
+  </section>
+
   <section id="programs" class="programs-section">
     <h2>Our Programs</h2>
     <div class="programs-container">
@@ -53,5 +71,51 @@
 
     </div>
   </section>
+
+  <section id="about" class="about-section">
+    <h2>About Us</h2>
+    <div class="directors">
+      <div class="director-card">
+        <img src="images/gloria.jpeg" alt="Gloria Bassey E">
+        <h3>Gloria Bassey E</h3>
+        <p>Founder & Executive Director</p>
+      </div>
+      <div class="director-card">
+        <img src="images/gracemeda.jpeg" alt="Gracemeda Eyoma">
+        <h3>Gracemeda Eyoma</h3>
+        <p>Project Manager (MHA)</p>
+      </div>
+      <div class="director-card">
+        <img src="images/hillary.jpeg" alt="Hillary Ujong">
+        <h3>Hillary Ujong</h3>
+        <p>Secretary of the Board</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact-section">
+    <h2>Contact Us</h2>
+    <p>We’d love to hear from you! Reach us directly at:</p>
+    <p><strong>Email:</strong> <a href="mailto:info@bemfoundationcanada.ca">info@bemfoundationcanada.ca</a></p>
+    <p><strong>Phone:</strong> <a href="tel:+14372233264">+1 (437) 223-3264</a></p>
+
+    <form action="mailto:info@bemfoundationcanada.ca" method="post" enctype="text/plain" class="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <section id="donate" class="donate-section">
+    <h2>Support Our Work</h2>
+    <p>Your generosity helps us empower youth, support families, and provide hope to newcomers.</p>
+    <a href="#" class="donate-button">Donate Coming Soon</a>
+  </section>
+
+  <footer>
+    <img src="images/logo.jpeg" alt="BEM Foundation Canada Logo" class="footer-logo">
+    <p>&copy; 2025 BEM Foundation Canada</p>
+  </footer>
 </body>
 </html>

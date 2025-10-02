@@ -1,12 +1,58 @@
-.programs-section {
-  padding: 50px 20px;
-  text-align: center;
-  background: #fafafa;
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fdfdfd;
+  color: #333;
 }
 
-.programs-section h2 {
-  font-size: 2rem;
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #b33c00;
+  color: white;
+  padding: 10px 20px;
+}
+
+.logo {
+  height: 60px;
+}
+
+nav a {
+  color: white;
+  margin: 0 12px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+nav .donate-btn {
+  background: #ffcc00;
+  color: #333;
+  padding: 6px 12px;
+  border-radius: 5px;
+}
+
+nav .donate-btn:hover {
+  background: #e6b800;
+}
+
+section {
+  padding: 50px 20px;
+}
+
+.mission-section {
+  background: #f5f5f5;
+  text-align: center;
+}
+
+.programs-section h2, .about-section h2, .contact-section h2, .donate-section h2 {
+  text-align: center;
   margin-bottom: 40px;
+  font-size: 2rem;
   color: #b33c00;
 }
 
@@ -25,15 +71,13 @@
 }
 
 .program-card h3 {
-  font-size: 1.3rem;
   margin-bottom: 15px;
-  color: #333;
+  font-size: 1.3rem;
 }
 
 .program-card ul {
   list-style: none;
   padding: 0;
-  margin: 0;
 }
 
 .program-card ul li {
@@ -48,4 +92,93 @@
   font-weight: bold;
   position: absolute;
   left: 0;
+}
+
+.about-section .directors {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  text-align: center;
+}
+
+.director-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.director-card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.contact-section {
+  background: #f5f5f5;
+  text-align: center;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input, .contact-form textarea {
+  margin: 10px 0;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.contact-form button {
+  background: #b33c00;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background: #992d00;
+}
+
+.donate-section {
+  text-align: center;
+  background: #fff4e6;
+}
+
+.donate-button {
+  background: #ff6600;
+  color: white;
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.donate-button:hover {
+  background: #e65c00;
+}
+
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.footer-logo {
+  height: 50px;
+  display: block;
+  margin: 0 auto 10px;
 }
