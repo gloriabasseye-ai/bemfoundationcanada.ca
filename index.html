@@ -1,172 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>BEM Foundation Canada</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
-  <style>
-    .collapsible {
-      background-color: var(--navy);
-      color: white;
-      cursor: pointer;
-      padding: 14px;
-      width: 100%;
-      border: none;
-      text-align: center;
-      outline: none;
-      font-size: 1rem;
-      border-radius: 6px;
-      margin-top: 20px;
-    }
-    .active, .collapsible:hover {
-      background-color: var(--orange);
-    }
-    .collapsible-content {
-      padding: 0 18px;
-      display: none;
-      overflow: hidden;
-      margin-top: 10px;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BEM Foundation Canada - Programs</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="site-header">
-    <img src="bem-logo.png" alt="BEM Foundation Canada Logo" class="logo" />
-    <h1 class="tagline">Empowering Youth, Supporting Families, Guiding Newcomers</h1>
-    <nav class="nav">
-      <a href="#about">About</a>
-      <a href="#programs">Programs</a>
-      <a href="#donate">Donate</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+  <section id="programs" class="programs-section">
+    <h2>Our Programs</h2>
+    <div class="programs-container">
 
-  <main>
-    <section id="about" class="section">
-      <h2>About Us</h2>
-      <p>
-        BEM Foundation Canada is dedicated to empowering youth, supporting families, and
-        helping newcomers build strong, successful futures in Canada. We believe that
-        every challenge is an opportunity for growth, and every life has potential.
-      </p>
-      <button type="button" class="collapsible">Meet Our Leadership</button>
-      <div class="collapsible-content">
-        <div class="cards">
-          <article class="card">
-            <img src="gloria.jpg" alt="Gloria Bassey E" class="profile-photo" />
-            <h4>Gloria Bassey E</h4>
-            <p>
-              Founder & Executive Director – A Social Worker with a background in community leadership 
-              and a degree in Guidance Counseling. Gloria is passionate about empowering youth, supporting 
-              families, and helping newcomers thrive in Canada.
-            </p>
-          </article>
-          <article class="card">
-            <img src="gracemeda.jpg" alt="Gracemeda Eyoma" class="profile-photo" />
-            <h4>Gracemeda Eyoma</h4>
-            <p>
-              Director – An experienced project manager with a background in public health and community 
-              development, Gracemeda brings strong organizational leadership and a heart for service.
-            </p>
-          </article>
-          <article class="card">
-            <img src="hillary.jpg" alt="Hillary Ujong" class="profile-photo" />
-            <h4>Hillary Ujong</h4>
-            <p>
-              Director & Secretary – Holds degrees in Philosophy and Criminology with Conflict Resolution 
-              Studies. Hillary is committed to community advocacy and empowering vulnerable populations 
-              through education and conflict resolution.
-            </p>
-          </article>
-        </div>
+      <div class="program-card">
+        <h3>🤝 Youth Mentorship</h3>
+        <ul>
+          <li>One-on-one mentoring</li>
+          <li>Life-skills workshops (job prep, money management, confidence)</li>
+          <li>Peer support circles for belonging</li>
+          <li>Support for youth overcoming exploitation or trafficking</li>
+        </ul>
       </div>
-    </section>
 
-    <section id="programs" class="section">
-      <h2>Our Programs</h2>
-      <div class="cards">
-        <article class="card">
-          <h3>Youth Mentorship</h3>
-          <p>
-            We walk alongside young people as they figure out school, friendships, and their future. 
-            Through one-on-one mentoring, life-skills workshops, and peer support circles, youth gain 
-            confidence, build positive habits, and learn real-world skills like job prep and money 
-            management. Our mentors are also trained to support youth who have faced difficult 
-            experiences, including exploitation or trafficking.
-          </p>
-        </article>
-
-        <article class="card">
-          <h3>Family Support</h3>
-          <p>
-            Raising a family in Canada can be overwhelming. We offer parenting workshops, help families 
-            access affordable child care, and host family days where parents can meet trusted child care 
-            providers and community workers. We also provide safe, confidential support for families 
-            welcoming back loved ones who have survived exploitation or trafficking.
-          </p>
-        </article>
-
-        <article class="card">
-          <h3>RESET Initiative</h3>
-          <p>
-            Everyone deserves a second chance. RESET supports youth who have had involvement with the 
-            justice system, offering weekly coaching, job readiness training, and positive opportunities 
-            to build resilience. We focus on giving young people the tools to move forward with dignity 
-            and purpose.
-          </p>
-        </article>
-
-        <article class="card">
-          <h3>Settlement Support</h3>
-          <p>
-            Starting over in a new country is never easy. Our settlement program helps newcomers understand 
-            Canadian systems, practice their English, and connect with housing, jobs, and community resources. 
-            We also provide specialized support for newcomer survivors of trafficking, ensuring safety, belonging, 
-            and a fresh start.
-          </p>
-        </article>
+      <div class="program-card">
+        <h3>👨‍👩‍👧 Family Support</h3>
+        <ul>
+          <li>Parenting workshops</li>
+          <li>Affordable, trusted child care connections</li>
+          <li>Family days with community workers</li>
+          <li>Confidential support for families welcoming back loved ones</li>
+        </ul>
       </div>
-    </section>
 
-    <section id="donate" class="section donate">
-      <h2>Support Our Mission</h2>
-      <p>
-        Every contribution helps us empower youth, support families, and guide newcomers
-        as they build their future in Canada. Your generosity fuels programs that provide
-        mentorship, settlement services, and second chances for those who need it most.
-      </p>
-      <button class="donate-btn" disabled title="Coming soon">Donate (Coming Soon)</button>
-      <p class="donate-note">
-        Online donations will be available shortly. Thank you for your patience and support.
-      </p>
-    </section>
+      <div class="program-card">
+        <h3>🔄 RESET Initiative</h3>
+        <ul>
+          <li>Weekly coaching for justice-involved youth</li>
+          <li>Job readiness training & resilience activities</li>
+          <li>Positive opportunities for a second chance</li>
+          <li>Helping youth move forward with dignity & purpose</li>
+        </ul>
+      </div>
 
-    <section id="contact" class="section">
-      <h2>Contact Us</h2>
-      <p>Email: <a href="mailto:info@bemfoundationcanada.ca">info@bemfoundationcanada.ca</a></p>
-      <p>Phone: <a href="tel:+14372233264">437-223-3264</a></p>
-    </section>
-  </main>
+      <div class="program-card">
+        <h3>🌍 Settlement Support</h3>
+        <ul>
+          <li>Guidance for newcomers adjusting to Canada</li>
+          <li>Help with housing, school & health care access</li>
+          <li>Language support & cultural orientation</li>
+          <li>Community connections to reduce isolation</li>
+        </ul>
+      </div>
 
-  <footer class="site-footer">
-    <p>&copy; 2025 BEM Foundation Canada. All rights reserved.</p>
-  </footer>
-
-  <script>
-    var coll = document.getElementsByClassName("collapsible");
-    for (var i = 0; i < coll.length; i++) {
-      coll[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var content = this.nextElementSibling;
-        if (content.style.display === "block") {
-          content.style.display = "none";
-        } else {
-          content.style.display = "block";
-        }
-      });
-    }
-  </script>
+    </div>
+  </section>
 </body>
 </html>
