@@ -6,6 +6,30 @@
   <title>BEM Foundation Canada</title>
   <link rel="stylesheet" href="styles.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    .collapsible {
+      background-color: var(--navy);
+      color: white;
+      cursor: pointer;
+      padding: 14px;
+      width: 100%;
+      border: none;
+      text-align: center;
+      outline: none;
+      font-size: 1rem;
+      border-radius: 6px;
+      margin-top: 20px;
+    }
+    .active, .collapsible:hover {
+      background-color: var(--orange);
+    }
+    .collapsible-content {
+      padding: 0 18px;
+      display: none;
+      overflow: hidden;
+      margin-top: 10px;
+    }
+  </style>
 </head>
 <body>
   <header class="site-header">
@@ -14,7 +38,6 @@
     <nav class="nav">
       <a href="#about">About</a>
       <a href="#programs">Programs</a>
-      <a href="#settlement">Settlement</a>
       <a href="#donate">Donate</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -28,35 +51,36 @@
         helping newcomers build strong, successful futures in Canada. We believe that
         every challenge is an opportunity for growth, and every life has potential.
       </p>
-
-      <h3>Our Leadership</h3>
-      <div class="cards">
-        <article class="card">
-          <img src="gloria.jpg" alt="Gloria Bassey E" class="profile-photo" />
-          <h4>Gloria Bassey E</h4>
-          <p>
-            Founder & Executive Director – A Social Worker with a background in community leadership 
-            and a degree in Guidance Counseling. Gloria is passionate about empowering youth, supporting 
-            families, and helping newcomers thrive in Canada.
-          </p>
-        </article>
-        <article class="card">
-          <img src="gracemeda.jpg" alt="Gracemeda Eyoma" class="profile-photo" />
-          <h4>Gracemeda Eyoma</h4>
-          <p>
-            Director – An experienced project manager with a background in public health and community 
-            development, Gracemeda brings strong organizational leadership and a heart for service.
-          </p>
-        </article>
-        <article class="card">
-          <img src="hillary.jpg" alt="Hillary Ujong" class="profile-photo" />
-          <h4>Hillary Ujong</h4>
-          <p>
-            Director & Secretary – Holds degrees in Philosophy and Criminology with Conflict Resolution 
-            Studies. Hillary is committed to community advocacy and empowering vulnerable populations 
-            through education and conflict resolution.
-          </p>
-        </article>
+      <button type="button" class="collapsible">Meet Our Leadership</button>
+      <div class="collapsible-content">
+        <div class="cards">
+          <article class="card">
+            <img src="gloria.jpg" alt="Gloria Bassey E" class="profile-photo" />
+            <h4>Gloria Bassey E</h4>
+            <p>
+              Founder & Executive Director – A Social Worker with a background in community leadership 
+              and a degree in Guidance Counseling. Gloria is passionate about empowering youth, supporting 
+              families, and helping newcomers thrive in Canada.
+            </p>
+          </article>
+          <article class="card">
+            <img src="gracemeda.jpg" alt="Gracemeda Eyoma" class="profile-photo" />
+            <h4>Gracemeda Eyoma</h4>
+            <p>
+              Director – An experienced project manager with a background in public health and community 
+              development, Gracemeda brings strong organizational leadership and a heart for service.
+            </p>
+          </article>
+          <article class="card">
+            <img src="hillary.jpg" alt="Hillary Ujong" class="profile-photo" />
+            <h4>Hillary Ujong</h4>
+            <p>
+              Director & Secretary – Holds degrees in Philosophy and Criminology with Conflict Resolution 
+              Studies. Hillary is committed to community advocacy and empowering vulnerable populations 
+              through education and conflict resolution.
+            </p>
+          </article>
+        </div>
       </div>
     </section>
 
@@ -129,5 +153,20 @@
   <footer class="site-footer">
     <p>&copy; 2025 BEM Foundation Canada. All rights reserved.</p>
   </footer>
+
+  <script>
+    var coll = document.getElementsByClassName("collapsible");
+    for (var i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+  </script>
 </body>
 </html>
