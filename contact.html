@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BEM Foundation Canada</title>
+  <title>Contact Us - BEM Foundation Canada</title>
   <link rel="icon" href="images/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -21,24 +21,22 @@
   </header>
 
   <main>
-    <section class="hero">
-      <img src="images/logo.png" alt="BEM Logo" class="hero-logo">
-      <h1>Welcome to BEM Foundation Canada</h1>
-      <h2>Our Mission</h2>
-      <p>To empower youth, strengthen families, and support newcomers by providing safe spaces,
-      mentorship, and community-based programs that inspire resilience and hope.</p>
+    <h1>Contact Us</h1>
+    <form action="https://formspree.io/f/your-form-id" method="POST">
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name" required><br>
 
-      <h2>Our Vision</h2>
-      <p>A society where youth are free from exploitation, families are safe and supported,
-      and newcomers are fully integrated into vibrant communities.</p>
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="_replyto" required><br>
 
-      <h2>What We Do</h2>
-      <ul>
-        <li>Youth empowerment & human trafficking interventions (RESET Initiative)</li>
-        <li>Family support through childcare and violence prevention programs</li>
-        <li>Settlement services for newcomers in housing, education, and integration</li>
-      </ul>
-    </section>
+      <label for="phone">Phone (optional):</label><br>
+      <input type="text" id="phone" name="phone"><br>
+
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" required></textarea><br>
+
+      <button type="submit">Send</button>
+    </form>
   </main>
 
   <footer>

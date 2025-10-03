@@ -1,9 +1,64 @@
-body {font-family: Arial, sans-serif; margin:0; padding:0;}
-.site-header {display:flex; justify-content:space-between; align-items:center; background:#b33c00; padding:10px 20px; color:white;}
-.logo {height:60px;}
-nav a {color:white; margin:0 10px; text-decoration:none; font-weight:bold;}
-nav a:hover {text-decoration:underline;}
-.donate-btn {background:#ffcc00; color:#333; padding:6px 12px; border-radius:5px;}
-section {padding:40px 20px;}
-footer {background:#333; color:white; text-align:center; padding:20px;}
-.footer-logo {height:50px; display:block; margin:0 auto 10px;}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+header {
+  background: #f4f4f4;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .logo {
+  height: 50px;
+}
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
+}
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+footer a {
+  color: #fff;
+  text-decoration: underline;
+}
+.leadership-row {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+.leader {
+  width: 30%;
+  text-align: center;
+}
+.leader img {
+  width: 80%;
+  border-radius: 10px;
+}
+form {
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+form input, form textarea, form button {
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 1rem;
+}
+form button {
+  background: orange;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+form button:hover {
+  background: darkorange;
+}
