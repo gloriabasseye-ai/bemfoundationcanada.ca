@@ -1,184 +1,32 @@
+/* Shared stylesheet */
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background: #fdfdfd;
+  font-family: 'Montserrat', sans-serif;
+  background: #fff;
   color: #333;
 }
-
-.site-header {
+header {
+  background: linear-gradient(90deg, #e63946, #457b9d);
+  padding: 1rem 2rem;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  background: #b33c00;
-  color: white;
-  padding: 10px 20px;
+  justify-content: space-between;
 }
-
-.logo {
-  height: 60px;
-}
-
-nav a {
-  color: white;
-  margin: 0 12px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-nav a:hover {
-  text-decoration: underline;
-}
-
-nav .donate-btn {
-  background: #ffcc00;
-  color: #333;
-  padding: 6px 12px;
-  border-radius: 5px;
-}
-
-nav .donate-btn:hover {
-  background: #e6b800;
-}
-
-section {
-  padding: 50px 20px;
-}
-
-.mission-section {
-  background: #f5f5f5;
-  text-align: center;
-}
-
-.programs-section h2, .about-section h2, .contact-section h2, .donate-section h2 {
-  text-align: center;
-  margin-bottom: 40px;
-  font-size: 2rem;
-  color: #b33c00;
-}
-
-.programs-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 25px;
-}
-
-.program-card {
-  background: #fff;
-  padding: 25px;
-  border-radius: 10px;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-  text-align: left;
-}
-
-.program-card h3 {
-  margin-bottom: 15px;
-  font-size: 1.3rem;
-}
-
-.program-card ul {
-  list-style: none;
-  padding: 0;
-}
-
-.program-card ul li {
-  margin: 8px 0;
-  padding-left: 20px;
-  position: relative;
-}
-
-.program-card ul li::before {
-  content: "•";
-  color: #b33c00;
-  font-weight: bold;
-  position: absolute;
-  left: 0;
-}
-
-.about-section .directors {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
-  text-align: center;
-}
-
-.director-card {
-  background: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-}
-
-.director-card img {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  margin-bottom: 15px;
-}
-
-.contact-section {
-  background: #f5f5f5;
-  text-align: center;
-}
-
-.contact-form {
-  max-width: 500px;
-  margin: 20px auto;
-  display: flex;
-  flex-direction: column;
-}
-
-.contact-form input, .contact-form textarea {
-  margin: 10px 0;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 1rem;
-}
-
-.contact-form button {
-  background: #b33c00;
-  color: white;
-  padding: 12px;
-  border: none;
-  border-radius: 5px;
-  font-size: 1rem;
-  cursor: pointer;
-}
-
-.contact-form button:hover {
-  background: #992d00;
-}
-
-.donate-section {
-  text-align: center;
-  background: #fff4e6;
-}
-
-.donate-button {
-  background: #ff6600;
-  color: white;
-  padding: 15px 30px;
-  text-decoration: none;
-  border-radius: 8px;
-  font-size: 1.2rem;
-  font-weight: bold;
-  display: inline-block;
-  margin-top: 20px;
-}
-
-.donate-button:hover {
-  background: #e65c00;
-}
-
-footer {
-  background: #333;
-  color: white;
-  text-align: center;
-  padding: 20px;
-}
-
-.footer-logo {
-  height: 50px;
-  display: block;
-  margin: 0 auto 10px;
-}
+header img { height: 60px; }
+nav a { margin: 0 1rem; color: #fff; text-decoration: none; font-weight: 600; }
+nav a:hover { text-decoration: underline; }
+.hero { text-align: center; padding: 5rem 2rem; background: linear-gradient(135deg,#ff7f50,#6a5acd); color: white; }
+.hero h1 { font-size: 2.8rem; margin-bottom: 1rem; }
+.hero p { font-size: 1.2rem; max-width: 700px; margin: 0 auto 2rem auto; }
+.hero button { background:#fff; color:#e63946; border:none; padding:1rem 2rem; font-size:1rem; font-weight:600; border-radius:5px; cursor:pointer; transition:0.3s; }
+.hero button:hover { background:#f1f1f1; }
+section { padding: 4rem 2rem; max-width: 1200px; margin: auto; }
+section h2 { text-align: center; font-size: 2rem; margin-bottom: 2rem; }
+.programs { display: grid; grid-template-columns: repeat(auto-fit,minmax(250px,1fr)); gap: 2rem; }
+.card { background:#fff; border-radius:10px; padding:2rem; box-shadow:0 4px 15px rgba(0,0,0,0.1); transition:transform 0.3s ease; }
+.card:hover { transform:translateY(-10px); }
+.card h3 { margin-top:0; color:#e63946; }
+footer { background:#1d3557; color:white; text-align:center; padding:2rem; margin-top:3rem; }
+footer a { color:#f1faee; text-decoration:none; }
+.leader { margin-bottom:2rem; padding:1.5rem; border-radius:8px; background:#f8f9fa; box-shadow:0 2px 10px rgba(0,0,0,0.05); }
+.leader h3 { margin-top:0; color:#e63946; }
