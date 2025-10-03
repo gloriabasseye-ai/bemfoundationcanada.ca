@@ -4,48 +4,118 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BEM Foundation Canada</title>
-  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <img src="images/logo.png" alt="BEM Foundation Canada Logo" class="logo">
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="programs.html">Programs</a>
-      <a href="about.html#leadership">Leadership</a>
-      <a href="contact.html">Contact</a>
-      <a href="donate.html">Donate (Coming Soon)</a>
+  <header class="site-header">
+    <div class="header-left">
+      <img src="images/logo.jpeg" alt="BEM Foundation Canada Logo" class="logo">
+    </div>
+    <nav class="header-right">
+      <a href="#mission">Mission & Vision</a>
+      <a href="#programs">Programs</a>
+      <a href="#about">About Us</a>
+      <a href="#contact">Contact Us</a>
+      <a href="#donate" class="donate-btn">Donate</a>
     </nav>
   </header>
 
-  <main>
-    <section class="hero">
-      <img src="images/logo.png" alt="BEM Logo" class="hero-logo">
-      <h1>Welcome to BEM Foundation Canada</h1>
-      <h2>Our Mission</h2>
-      <p>To empower youth, strengthen families, and support newcomers by providing safe spaces,
-      mentorship, and community-based programs that inspire resilience and hope.</p>
+  <section id="mission" class="mission-section">
+    <h2>Our Mission & Vision</h2>
+    <p>Empowering youth, supporting families, and guiding newcomers toward thriving futures.</p>
+  </section>
 
-      <h2>Our Vision</h2>
-      <p>A society where youth are free from exploitation, families are safe and supported,
-      and newcomers are fully integrated into vibrant communities.</p>
+  <section id="programs" class="programs-section">
+    <h2>Our Programs</h2>
+    <div class="programs-container">
 
-      <h2>What We Do</h2>
-      <ul>
-        <li>Youth empowerment & human trafficking interventions (RESET Initiative)</li>
-        <li>Family support through childcare and violence prevention programs</li>
-        <li>Settlement services for newcomers in housing, education, and integration</li>
-      </ul>
-    </section>
-  </main>
+      <div class="program-card">
+        <h3>🤝 Youth Mentorship</h3>
+        <ul>
+          <li>One-on-one mentoring</li>
+          <li>Life-skills workshops (job prep, money management, confidence)</li>
+          <li>Peer support circles for belonging</li>
+          <li>Support for youth overcoming exploitation or trafficking</li>
+        </ul>
+      </div>
+
+      <div class="program-card">
+        <h3>👨‍👩‍👧 Family Support</h3>
+        <ul>
+          <li>Parenting workshops</li>
+          <li>Affordable, trusted child care connections</li>
+          <li>Family days with community workers</li>
+          <li>Confidential support for families welcoming back loved ones</li>
+        </ul>
+      </div>
+
+      <div class="program-card">
+        <h3>🔄 RESET Initiative</h3>
+        <ul>
+          <li>Weekly coaching for justice-involved youth</li>
+          <li>Job readiness training & resilience activities</li>
+          <li>Positive opportunities for a second chance</li>
+          <li>Helping youth move forward with dignity & purpose</li>
+        </ul>
+      </div>
+
+      <div class="program-card">
+        <h3>🌍 Settlement Support</h3>
+        <ul>
+          <li>Guidance for newcomers adjusting to Canada</li>
+          <li>Help with housing, school & health care access</li>
+          <li>Language support & cultural orientation</li>
+          <li>Community connections to reduce isolation</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="about" class="about-section">
+    <h2>About Us</h2>
+    <div class="directors">
+      <div class="director-card">
+        <img src="images/placeholder.png" alt="Director Photo">
+        <h3>Gloria Bassey E</h3>
+        <p>Founder and Executive Director with a background in Social Work, Guidance Counselling, and Youth Mentorship. Passionate about empowering families and communities.</p>
+      </div>
+      <div class="director-card">
+        <img src="images/placeholder.png" alt="Director Photo">
+        <h3>Gracemeda Eyoma</h3>
+        <p>Project Manager (MHA) with extensive experience leading community initiatives and supporting organizational growth.</p>
+      </div>
+      <div class="director-card">
+        <img src="images/placeholder.png" alt="Director Photo">
+        <h3>Hillary Ujong</h3>
+        <p>Secretary of the Board, holding degrees in Philosophy, Criminology, and Conflict Resolution Studies. Dedicated to justice and youth development.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact-section">
+    <h2>Contact Us</h2>
+    <p>We’d love to hear from you! Reach us directly at:</p>
+    <p><strong>Email:</strong> <a href="mailto:info@bemfoundationcanada.ca">info@bemfoundationcanada.ca</a></p>
+    <p><strong>Phone:</strong> <a href="tel:+14372233264">+1 (437) 223-3264</a></p>
+
+    <form action="mailto:info@bemfoundationcanada.ca" method="post" enctype="text/plain" class="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <section id="donate" class="donate-section">
+    <h2>Support Our Work</h2>
+    <p>Your generosity helps us empower youth, support families, and provide hope to newcomers.</p>
+    <a href="#" class="donate-button">Donate Coming Soon</a>
+  </section>
 
   <footer>
-    <p>🌈 BEM Foundation Canada</p>
-    <p>Email: info@bemfoundationcanda.ca | Phone: +1 (437) 223-3264</p>
-    <p>Facebook | Instagram | LinkedIn</p>
-    <p>🕒 Last Updated: October 2025</p>
+    <img src="images/logo.jpeg" alt="BEM Foundation Canada Logo" class="footer-logo">
+    <p>&copy; 2025 BEM Foundation Canada</p>
   </footer>
 </body>
 </html>
